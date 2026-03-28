@@ -339,6 +339,8 @@ body:has(#darkmode-toggle:checked) {
   margin-top: 3rem;
   margin-bottom: 3rem;
   max-width: 75%;
+  line-height: 1.5;
+  letter-spacing: .025rem;
 
   @media screen and (min-width: 850px) {
     margin-top: 5rem;
