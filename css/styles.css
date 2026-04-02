@@ -19,12 +19,18 @@ body {
 .container {
   margin-left: 1rem;
   margin-right: 1rem;
+  padding-bottom: 4rem;
 
   @media screen and (min-width: 850px) {
     width: 100%;
     max-width: 46rem;
     margin: 0 auto;
   }
+}
+
+.container-contact{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* header */
@@ -348,6 +354,24 @@ body:has(#darkmode-toggle:checked) {
   }
 }
 
+.contact-body{
+  
+  text-align: center;
+font-size: 1.25rem;
+
+@media screen and (min-width: 850px){
+ font-size: 1.5rem;
+}
+ 
+}
+
+.contact-email{
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
 .addquestion {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -359,8 +383,34 @@ body:has(#darkmode-toggle:checked) {
     font-size: 1.2rem;
   }
 }
+.about-body{
+  margin-left: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 75%;
+  line-height: 1.5;
+  letter-spacing: .025rem;
 
+  @media screen and (min-width: 850px) {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+}
+.about-intro {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 65%;
+  font-family: "Iosevka Charon Mono";
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--text);
 
+  @media screen and (min-width: 850px) {
+    font-size: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+}
 
 .img {
   max-width: 75%;
@@ -412,25 +462,87 @@ blockquote {
 }
 
 .date {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: right;
 
   @media screen and (min-width: 850px) {
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
     margin-top: 3rem;
   }
 }
 
 /* footer */
-.site-footer {
-  background-color: var(--accent1);
-  color: var(--bg);
+footer{
+  background: var(--accent1);
+  height: auto;
+  width: auto;
+  font-family: "Iosevka Charon Mono";
+  padding-top: 2.5rem;
+  color: var(--text-darkmode);
+}
 
-  p {
-    padding: 2rem 1rem;
-  }
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
 
-  @media screen and (min-width: 850px) {
-    padding: 4rem 1rem;
-  }
+.footer-content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p{
+  max-width: 35rem;
+  margin: 1rem auto;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: var(--text-darkmode)
+}
+
+.socials a i {
+  font-size: 1.1rem;
+}
+
+.socials a:hover i{
+  color:var(--text-darkmode);
+}
+
+.footer-bottom{
+  background: var(--accent1);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
